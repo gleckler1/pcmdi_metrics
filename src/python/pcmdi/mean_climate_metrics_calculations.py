@@ -1,5 +1,7 @@
 import cdms2 as cdms
 import pcmdi_metrics
+import cdutil
+import MV2 as MV
 
 def compute_metrics(var,dm_glb,do_glb):
     cdms.setAutoBounds('on')
@@ -11,6 +13,13 @@ def compute_metrics(var,dm_glb,do_glb):
         
         dm = dm_glb
         do = do_glb
+
+#  COMING SOON
+#       dmzm = cdutil.averager(dm,axis='x')
+#       dozm = cdutil.averager(do,axis='x')
+
+#       dm_dep_zm = MV.subtract(dm,dmzm) 
+#       do_dep_zm =  MV.subtract(do,dozm) 
         
         if dom == 'NHEX':
             dm = dm_glb(latitude = (30.,90))
