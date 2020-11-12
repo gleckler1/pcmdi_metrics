@@ -11,7 +11,7 @@ The PCMDI metrics package is used to provide "quick-look" objective comparisons 
 
 PCMDI uses the PMP to produce `quick-look simulation summaries across generations of CMIP <https://cmec.llnl.gov/results/physical.html>`_
 
-The metrics package consists of four parts: 1) Analysis software, 2) an observationally-based database of global (or near global, land or ocean) annual cycle climatologies, 3) a database of performance metrics computed for CMIP models and 4) package documentation (in preparation).
+The metrics package consists of four parts: 1) Analysis software, 2) an observationally-based database, 3) a database of performance metrics computed for CMIP models and 4) package documentation.
 
 The package expects model data to be `CF-compliant <http://cfconventions.org/>`_. To successfully use the package some input data "conditioning" may be required. We provide several demo scripts within the package.
 
